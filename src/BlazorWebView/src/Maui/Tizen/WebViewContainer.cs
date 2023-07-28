@@ -1,6 +1,6 @@
 ﻿using System;
-using Tizen.UIExtensions.ElmSharp;
 using ElmSharp;
+using Tizen.UIExtensions.ElmSharp;
 using TWebView = Tizen.WebView.WebView;
 
 namespace Microsoft.AspNetCore.Components.WebView.Maui
@@ -10,7 +10,7 @@ namespace Microsoft.AspNetCore.Components.WebView.Maui
 	/// </summary>
 	public class WebViewContainer : WidgetLayout
 	{
-		
+
 		/// <summary>
 		/// A Tizen WebView.
 		/// </summary>

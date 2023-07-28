@@ -46,7 +46,7 @@ namespace Microsoft.Maui.Platform
 			platformWindow.Active();
 			platformWindow.Show();
 			platformWindow.AvailableRotations = DisplayRotation.Degree_0 | DisplayRotation.Degree_90 | DisplayRotation.Degree_180 | DisplayRotation.Degree_270;
-			
+
 			platformWindow.RotationChanged += (sender, e) =>
 			{
 				// TODO : should update later

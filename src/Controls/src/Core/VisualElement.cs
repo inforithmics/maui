@@ -1014,7 +1014,7 @@ namespace Microsoft.Maui.Controls
 #endif
 		}
 
-		bool IsMocked() 
+		bool IsMocked()
 		{
 			return _mockX != -1 || _mockY != -1 || _mockWidth != -1 || _mockHeight != -1;
 		}
@@ -1197,7 +1197,7 @@ namespace Microsoft.Maui.Controls
 			PropertyPropagationExtensions.PropagatePropertyChanged(propertyName, this, ((IVisualTreeElement)this).GetVisualChildren());
 		}
 
-		void UpdateBoundsComponents(Rect bounds) 
+		void UpdateBoundsComponents(Rect bounds)
 		{
 			_frame = bounds;
 

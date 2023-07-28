@@ -4,8 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using ElmSharp;
-using Microsoft.Maui.Devices;
 using Microsoft.Maui.Controls.Internals;
+using Microsoft.Maui.Devices;
 using EGestureType = ElmSharp.GestureLayer.GestureType;
 
 namespace Microsoft.Maui.Controls.Platform
@@ -204,7 +204,8 @@ namespace Microsoft.Maui.Controls.Platform
 		{
 			var cache = _handlerCache;
 			var handler = LookupHandler(recognizer);
-			if (handler == null) return;
+			if (handler == null)
+				return;
 
 			var gestureType = cache.FirstOrDefault(x => x.Value.Contains(handler)).Key;
 
