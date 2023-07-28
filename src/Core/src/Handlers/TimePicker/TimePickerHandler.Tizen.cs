@@ -1,9 +1,9 @@
 using System;
 using Tizen.UIExtensions.Common;
 using Tizen.UIExtensions.ElmSharp;
+using EcoreMainloop = ElmSharp.EcoreMainloop;
 using TEntry = Tizen.UIExtensions.ElmSharp.Entry;
 using TTextAlignment = Tizen.UIExtensions.Common.TextAlignment;
-using EcoreMainloop = ElmSharp.EcoreMainloop;
 
 namespace Microsoft.Maui.Handlers
 {
@@ -109,7 +109,7 @@ namespace Microsoft.Maui.Handlers
 				var dialog = _lazyDialog.Value;
 				dialog.DateTime -= dialog.DateTime.TimeOfDay;
 				dialog.DateTime += VirtualView.Time;
-				
+
 				// You need to call Show() after ui thread occupation because of EFL problem.
 				// Otherwise, the content of the popup will not receive focus.
 				EcoreMainloop.Post(() => dialog.Show());

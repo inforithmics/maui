@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using Tizen.UIExtensions.ElmSharp;
-using TEntry = Tizen.UIExtensions.ElmSharp.Entry;
-using TTextAlignment = Tizen.UIExtensions.Common.TextAlignment;
 using DeviceInfo = Tizen.UIExtensions.Common.DeviceInfo;
 using EcoreMainloop = ElmSharp.EcoreMainloop;
 using List = ElmSharp.List;
 using ListItem = ElmSharp.ListItem;
+using TEntry = Tizen.UIExtensions.ElmSharp.Entry;
+using TTextAlignment = Tizen.UIExtensions.Common.TextAlignment;
 
 namespace Microsoft.Maui.Handlers
 {
@@ -19,12 +19,12 @@ namespace Microsoft.Maui.Handlers
 		protected override TEntry CreatePlatformView()
 		{
 			return new EditfieldEntry(PlatformParent)
-			   {
-				   IsSingleLine = true,
-				   InputPanelShowByOnDemand = true,
-				   IsEditable = false,
-				   HorizontalTextAlignment = TTextAlignment.Center
-			   };
+			{
+				IsSingleLine = true,
+				InputPanelShowByOnDemand = true,
+				IsEditable = false,
+				HorizontalTextAlignment = TTextAlignment.Center
+			};
 		}
 
 		protected override void ConnectHandler(TEntry platformView)
